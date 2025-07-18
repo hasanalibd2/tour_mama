@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    max-width: 1260px;
+    margin: 0 auto;
+    background-image: linear-gradient(#FFFFFF, #EBDCFF);
+    min-height: 100vh;
+}
+
+/* shared styles */
+.btn_primary {
+    padding: 16px 32px;
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: #872BFF;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 16px 32px;
+    color: #1C1C1C;
+    border: 1px solid rgb(135, 43, 255);
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.spacing {
+    padding: 20px 30px;
+    margin-bottom: 100px;
+}
+
+
+/* banner related styles */
+.banner_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+    background-image: url('./images/hero-bg.png');
+    background-color: white;
+    border: 2px solid #872bff10;
+    border-radius: 30px;
+}
+
+.banner_content * {
+    margin-bottom: 30px;
+}
+
+.banner_content h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.banner_content span {
+    color: #F411CF;
+}
+
+.banner_image img {
+    width: 600px;
+}
+
+/* Services related styles */
+.heading_content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading_content h1 {
+    color: rgb(244, 17, 207);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.heading_content h2 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.service_card_container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.service_card {
+    text-align: center;
+    padding: 80px 50px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 70px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(253, 255, 255);
+}
+
+.service_card h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C1C1C;
+}
+
+.service_card p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #A8A8A8;
+}
+
+.service_card * {
+    margin-bottom: 30px;
+}
+
+/* explore asia related styles */
+.explore_container {
+    padding: 48px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.explore_content * {
+    margin-bottom: 20px;
+}
+
+/* countries related styles */
+.countries h1 {
+    padding: 40px;
+    color: #0E0E0ECC;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+/* reviews related styles */
+.testimonial-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.role {
+    font-size: 0.95rem;
+    color: #777;
+    margin-top: 4px;
+}
+
+.stars {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .banner_container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .spacing {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .banner_content h1 {
+        font-size: 60px;
+    }
+
+    .banner_image img {
+        width: 100%;
+    }
+
+    .service_card_container,
+    .countries {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .heading_content {
+        text-align: center;
+    }
+
+    .explore_container {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        margin-top: 30px;
+    }
+
+    .stars img{
+        display: none;
+    }
+
+}
